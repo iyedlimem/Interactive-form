@@ -1,0 +1,346 @@
+.error{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  color: #e51717;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.check {
+  margin: 0px auto;
+  width: 75px;
+  height: 75px;
+  left: 179px;
+  top: 373px;
+  border-radius: 50%;
+  background: linear-gradient(143.06deg, #5D42DB 16.48%, #600CA0 95.71%);
+  display: grid;
+  place-items: center;
+}
+
+.Success {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0px auto;
+  color: #220A2E;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: 0px auto;
+  background: url("../public/Charm_tick.png");
+}
+
+.SuccessState{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: auto;
+  gap: 25px;
+  width: 450px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10%;
+  margin-left: auto;
+  gap: 25px;
+  width: 450px;
+}
+
+.formContol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formContolDate {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.formwrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.leftSide {
+  min-width: 300px;
+  width: 30%;
+  height: 100vh;
+  background: url("../public/Background.png");
+}
+
+.rightSide {
+  display: flex;
+  width: 100%;
+}
+
+.cardFront {
+  width: 530px;
+  height: 290px;
+  top: 160px;
+  position: absolute;
+  left: 10%;
+  z-index: 10;
+}
+
+.cardBack {
+  width: 530px;
+  height: 290px;
+  top: 490px;
+  position: absolute;
+  left: 15%;
+}
+
+.label {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #939094;
+}
+.labelSuc{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #939094;
+  margin: 0px auto;
+}
+.button {
+  height: 53px;
+  background: #220A2E;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin-top: 25px;
+}
+
+
+.formInput {
+  width: 100%;
+  height: 53px;
+  border: 1px solid #AEB6BF;
+  border-radius: 5px;
+  padding: 26px;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #939094;
+}
+
+@media only screen and (max-width: 1300px) {
+  .form {
+    margin-right: 8%;
+  }
+
+  .cardFront {
+    width: 406px;
+    height: 225px;
+    top: 230px;
+    position: absolute;
+    left: 5%;
+    z-index: 10;
+  }
+
+  .cardBack {
+    width: 406px;
+    height: 225px;
+    top: 480px;
+    position: absolute;
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .form {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    width: 375px;
+  }
+
+  .label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #939094;
+  }
+
+  .cardFront {
+    width: 325px;
+    height: 180px;
+    top: 150px;
+    position: absolute;
+    left: 70px;
+    z-index: 10;
+  }
+
+  .cardBack {
+    width: 325px;
+    height: 180px;
+    top: 40px;
+    position: absolute;
+    left: calc(100% - 395px);
+  }
+
+  .rightSide {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 280px);
+  }
+
+  .leftSide {
+    width: auto;
+    height: 280px;
+    background: content-box url("../public/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cardFront {
+    width: 325px;
+    height: 180px;
+    top: 150px;
+    position: absolute;
+    left: 15px;
+    z-index: 10;
+  }
+
+  .cardBack {
+    width: 325px;
+    height: 180px;
+    top: 40px;
+    position: absolute;
+    left: calc(100% - 345px);
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .cardFront {
+    width: 290px;
+    height: 160px;
+    top: 130px;
+    position: absolute;
+    left: 15px;
+    z-index: 10;
+  }
+
+  .cardBack {
+    width: 290px;
+    height: 160px;
+    top: 20px;
+    position: absolute;
+    left: calc(100% - 310px);
+  }
+
+  .leftSide {
+    width: auto;
+    height: 240px;
+    background: content-box url("/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .rightSide {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 280px);
+  }
+
+  .form {
+    width: 80%;
+    gap: 5px;
+  }
+
+  .label {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .formInput {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .button {
+    height: 40px;
+    background: #220A2E;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-top: 10px;
+    border: none;
+  }
+  
+}
